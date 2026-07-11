@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dark_bg"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🎮 Dani Modder"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/accent"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Non-Unity Game Dumper"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Process Selection -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Process:"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerProcesses"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/dark_card"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Button: Refresh -->
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="🔄 Refresh Process List"
+        android:background="@drawable/btn_style"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Button: Attach -->
+    <Button
+        android:id="@+id/btnAttach"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="🔗 Attach Frida"
+        android:background="@drawable/btn_style_primary"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Button: Dump -->
+    <Button
+        android:id="@+id/btnDump"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="💾 Dump Library"
+        android:background="@drawable/btn_style_success"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:enabled="false"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Button: Tutorial -->
+    <Button
+        android:id="@+id/btnTutorial"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="📚 Tutorial & Guide"
+        android:background="@drawable/btn_style_info"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Status Log -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status Log:"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:layout_marginBottom="8dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/dark_card"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/tvLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="App Ready. Select a process to begin..."
+            android:textSize="11sp"
+            android:textColor="@color/text_log"
+            android:padding="12dp"
+            android:fontFamily="monospace" />
+    </ScrollView>
+
+    <!-- Footer -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Made by Dani Modder | v1.0.0"
+        android:textSize="10sp"
+        android:textColor="@color/text_secondary"
+        android:gravity="center" />
+
+</LinearLayout>
