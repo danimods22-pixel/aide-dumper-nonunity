@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Dani Modder</string>
+    <string name="title_activity_main">Dani Modder - Non-Unity Dumper</string>
+    <string name="title_activity_tutorial">Tutorial & Guide</string>
+    <string name="btn_refresh">🔄 Refresh</string>
+    <string name="btn_attach">🔗 Attach</string>
+    <string name="btn_dump">💾 Dump</string>
+    <string name="btn_tutorial">📚 Tutorial</string>
+    <string name="label_select_process">Select Process:</string>
+    <string name="label_status_log">Status Log:</string>
+    <string name="status_ready">App Ready. Select a process to begin...</string>
+    <string name="error_permission_denied">Permission Denied</string>
+    <string name="error_frida_not_attached">Frida not attached</string>
+    <string name="error_dump_failed">Dump failed</string>
+</resources>

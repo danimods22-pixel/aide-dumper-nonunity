@@ -1,0 +1,13 @@
+.gradle
+.idea
+*.iml
+*.apk
+*.aar
+*.so
+*.jks
+*.keystore
+build/
+out/
+.DS_Store
+dump.bin
+log.txt
