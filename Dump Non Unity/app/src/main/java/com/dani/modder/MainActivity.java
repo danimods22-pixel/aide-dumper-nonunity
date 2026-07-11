@@ -262,6 +262,10 @@ public class MainActivity extends AppCompatActivity {
                     dummyData[i] = (byte) (i % 256);
                 }
                 
+                FileWriter fw = new FileWriter(dumpFile);
+                fw.close();
+                dumpFile.delete();
+                
                 java.nio.file.Files.write(dumpFile.toPath(), dummyData);
                 
                 updateLog("✓ Dump completed!");
